@@ -1,6 +1,6 @@
 [versions]
 agp = "8.1.0"
-lint-demo = "0.1-experimental"
+lint-demo = "0.1-alpha"
 org-jetbrains-kotlin-android = "1.8.10"
 core-ktx = "1.9.0"
 junit = "4.13.2"
