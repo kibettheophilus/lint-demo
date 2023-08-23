@@ -18,5 +18,5 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
 dependencies {
     compileOnly("com.android.tools.lint:lint-api:31.1.0")
     compileOnly("com.android.tools.lint:lint-checks:31.1.0")
-//    compileOnly("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20")
+   compileOnly("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20")
 }
