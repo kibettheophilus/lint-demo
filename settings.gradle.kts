@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Lint Demo"
 include(":app")
- 
+include(":lint-demo")
