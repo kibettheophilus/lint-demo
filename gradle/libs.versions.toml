@@ -1,5 +1,6 @@
 [versions]
 agp = "8.1.0"
+lint-demo = "0.1-experimental"
 org-jetbrains-kotlin-android = "1.8.10"
 core-ktx = "1.9.0"
 junit = "4.13.2"
@@ -20,6 +21,7 @@ espresso-core = { group = "androidx.test.espresso", name = "espresso-core", vers
 lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
 activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
 compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+lint-demo = { module = "com.github.kibettheophilus:lint-demo", version.ref = "lint-demo" }
 ui = { group = "androidx.compose.ui", name = "ui" }
 ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
