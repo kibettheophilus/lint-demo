@@ -41,19 +41,19 @@ class AndroidLogDetector : Detector(), SourceCodeScanner {
     companion object {
         private val IMPLEMENTATION = Implementation(
             AndroidLogDetector::class.java,
-            Scope.JAVA_FILE_SCOPE,
+            Scope.JAVA_FILE_SCOPE, //ALL, GRADLE_SCOPE, MANIFEST_SCOPE
         )
 
         val ISSUE = Issue.create(
-            id = "AndroidLogDetector",
-            briefDescription = "The android log should not be used.",
+            id = "AndroidLogDetector", // @SuppressLint("AndroidLogDetector")
+            briefDescription = "The android log should not be used, please use Timber instead.",
             explanation = """
                 Using android log brings in inconsistency in our codebase, because some other parts are using Timber.
             """.trimIndent(),
-            category = Category.CORRECTNESS,
-            priority = 5,
+            category = Category.CORRECTNESS,// SECURITY,I18N,PERFORMANCE
+            priority = 5, // 1-10
             implementation = IMPLEMENTATION,
-            severity = Severity.ERROR,
+            severity = Severity.ERROR, // WARNING, FATAL
         )
     }
 }
