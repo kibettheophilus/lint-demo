@@ -53,7 +53,7 @@ class AndroidLogDetector : Detector(), SourceCodeScanner {
             category = Category.CORRECTNESS,
             priority = 5,
             implementation = IMPLEMENTATION,
-            severity = Severity.WARNING,
+            severity = Severity.ERROR,
         )
     }
 }
