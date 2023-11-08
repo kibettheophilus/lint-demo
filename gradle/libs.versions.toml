@@ -37,12 +37,14 @@ kotlin-stdlib = {module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref
 lint-api = { group = "com.android.tools.lint", name ="lint-api", version.ref = "lint"}
 lint-checks = { group = "com.android.tools.lint", name ="lint-checks", version.ref = "lint"}
 lint-test = { group = "com.android.tools.lint", name ="lint-tests", version.ref = "lint"}
+lint-cli = { group = "com.android.tools.lint", name = "lint", version.ref = "lint" }
 
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 com-android-library = { id = "com.android.library", version.ref = "agp" }
 org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+android-lint = { id = "com.android.lint", version.ref = "agp" }
 
 [bundles]
 
