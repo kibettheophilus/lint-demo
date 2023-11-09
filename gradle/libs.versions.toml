@@ -1,17 +1,17 @@
 [versions]
 agp = "8.1.0"
 #lint-demo = "0.1-alpha"
-org-jetbrains-kotlin-android = "1.8.10"
+kotlin = "1.8.10"
 core-ktx = "1.9.0"
 junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 lifecycle-runtime-ktx = "2.6.1"
+lint = "31.1.0"
 activity-compose = "1.7.2"
 compose-bom = "2023.03.00"
 appcompat = "1.6.1"
 material = "1.9.0"
-org-jetbrains-kotlin-jvm = "1.8.10"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -31,12 +31,20 @@ ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+kotlin-stdlib = {module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref="kotlin"}
+
+# lint
+lint-api = { group = "com.android.tools.lint", name ="lint-api", version.ref = "lint"}
+lint-checks = { group = "com.android.tools.lint", name ="lint-checks", version.ref = "lint"}
+lint-test = { group = "com.android.tools.lint", name ="lint-tests", version.ref = "lint"}
+lint-cli = { group = "com.android.tools.lint", name = "lint", version.ref = "lint" }
 
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }
-org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 com-android-library = { id = "com.android.library", version.ref = "agp" }
-org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+android-lint = { id = "com.android.lint", version.ref = "agp" }
 
 [bundles]
 
